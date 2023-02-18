@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <script>
+        var fruits = new Array ("apple","orange","mango","sugar","tea");
+        document.write(fruits.slice(-4,-1) + "<br>");
+        document.write(fruits.splice(2,0));
+
+        // var mybook = new array("Perl","Mohtashim");
+        // book.prototype.price = null;
+        // mybook.price = 100;
+
+        // document.write(mybook.price);
+
+        // var alpha = ('a','b','c');
+
+        function isBigEnough(element,index,array){
+            return (element >= 10);
+        
+
+        }
+
+        var passed = [12,50,80,130,44].every(isBigEnough);
+        document.write(passed);
+
+        var filtered = [12,50,80,130,44].filter(isBigEnough);
+        document.write(filtered);
+
+        function printBr(element,index,array){
+            document.write("<br/>[" +index + "]"+"is"+element);
+
+        }
+
+        [12,5,8].forEach(printBr);
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
